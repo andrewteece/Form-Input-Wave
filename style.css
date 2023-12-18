@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(207, 44%, 49%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.25rem 2.5rem;
+  border-radius: 7px;
+}
+
+.wrapper h1 {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: hsl(195, 53%, 79%);
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: hsl(195, 53%, 79%);
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.form-text {
+  margin-top: 1.875rem;
+}
+
+.form-control {
+  position: relative;
+  margin: 1.25rem 0 2.5rem;
+  max-width: 18.75rem;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.125rem;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: hsl(195, 53%, 79%);
+}
+
+.form-control label {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 1.125rem;
+  min-width: 0.3125rem;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: hsl(195, 53%, 79%);
+  transform: translateY(-30px);
+}
